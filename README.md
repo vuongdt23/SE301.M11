@@ -13,9 +13,9 @@
 [crowdin]: https://crowdin.com/project/mastodon
 [docker]: https://hub.docker.com/r/tootsuite/mastodon/
 
-Mastodon is a **free, open-source social network server** based on ActivityPub where users can follow friends and discover new ones. On Mastodon, users can publish anything they want: links, pictures, text, video. All Mastodon servers are interoperable as a federated network (users on one server can seamlessly communicate with users from another one, including non-Mastodon software that implements ActivityPub)!
+Mastodon là một **server mạng xã hội miễn phí, mã nguồn mở** dựa trên ActivityPub nơi mà người dùng có thể theo dõi bạn bè và khám phá những người bạn mới. Tại Mastodon, người dùng có thể đăng tải mọi thứ mình muốn: link, hình ảnh, chữ viết, video. Tất cả các server của Mastodon đều có thể tương tác như một mạng liên hợp (người dùng trên một server có thể liên lạc với người dùng trên server khác, kể cả những phần mềm  không phải mastodon mà sử dụng ActivityPub)!
 
-Click below to **learn more** in a video:
+Bấm vào bên dưới để  **biết thêm** bằng cách xem video giới thiệu:
 
 [![Screenshot](https://blog.joinmastodon.org/2018/06/why-activitypub-is-the-future/ezgif-2-60f1b00403.gif)][youtube_demo]
 
@@ -23,72 +23,68 @@ Click below to **learn more** in a video:
 
 ## Navigation
 
-- [Project homepage 🐘](https://joinmastodon.org)
-- [Support the development via Patreon][patreon]
-- [View sponsors](https://joinmastodon.org/sponsors)
+- [Trang chủ dự án 🐘](https://joinmastodon.org)
+- [Xem nhà tài trợ](https://joinmastodon.org/sponsors)
 - [Blog](https://blog.joinmastodon.org)
 - [Documentation](https://docs.joinmastodon.org)
-- [Browse Mastodon servers](https://joinmastodon.org/#getting-started)
-- [Browse Mastodon apps](https://joinmastodon.org/apps)
+- [Xem các server Mastodon](https://joinmastodon.org/#getting-started)
+- [Xem các ứng dụng Mastodon](https://joinmastodon.org/apps)
 
-[patreon]: https://www.patreon.com/mastodon
 
-## Features
+
+## Tính năng
 
 <img src="https://docs.joinmastodon.org/elephant.svg" align="right" width="30%" />
 
-**No vendor lock-in: Fully interoperable with any conforming platform**
+**Không bị khóa nhà cung cấp: Hoàn toàn tương thích với những nền tảng ActivityPub**
 
-It doesn't have to be Mastodon, whatever implements ActivityPub is part of the social network! [Learn more](https://blog.joinmastodon.org/2018/06/why-activitypub-is-the-future/)
+Không cần phải là Mastodon, phần mềm nào sử dụng ActivityPub cũng là một phần của mạng xã hội! [Xem thêm](https://blog.joinmastodon.org/2018/06/why-activitypub-is-the-future/)
 
-**Real-time, chronological timeline updates**
+**Dòng thời gian cập nhật theo thời gian thực, đúng thứ tự**
 
-See the updates of people you're following appear in real-time in the UI via WebSockets. There's a firehose view as well!
+Những cập nhật của những người bạn theo dõi sẽ được cập nhật theo thời gian thực trong Giao Diện bằng Websocket!
 
-**Media attachments like images and short videos**
+**Đa phương tiện như hình ảnh và video ngắn**
 
-Upload and view images and WebM/MP4 videos attached to the updates. Videos with no audio track are treated like GIFs; normal videos are looped - like vines!
+Tải lên và xem hình ảnh và video dạng WebM/MP4 gắn với những bài đăng của bạn. Video không có âm thanh sẽ được xử lý như GIF;video thường sẽ được phát đi phát lại - như vines vậy!
 
-**Safety and moderation tools**
+**Các công cụ an toàn và giám sát**
 
-Private posts, locked accounts, phrase filtering, muting, blocking and all sorts of other features, along with a reporting and moderation system. [Learn more](https://blog.joinmastodon.org/2018/07/cage-the-mastodon/)
+Bài đăng riêng tư, khóa tài khoản, lọc cụm từ, bỏ xem bài viết, chặn và nhiều chức năng khác, cùng với đó là một hệ thống tố cáo và kiểm duyệt. [Xem thêm](https://blog.joinmastodon.org/2018/07/cage-the-mastodon/)
 
-**OAuth2 and a straightforward REST API**
+**OAuth2 và một REST API đơn giản**
 
-Mastodon acts as an OAuth2 provider so 3rd party apps can use the REST and Streaming APIs, resulting in a rich app ecosystem with a lot of choices!
+Mastodon cso thể được dùng như một nhà cung cấp OAuth2 nên các ứng dụng bên thứ ba có thể sử dụng API REST và Streaming, mang lại một hệ sinh thái ứng dụng đa dạng với nhiều lựa chọn!
 
-## Deployment
+## Vận hành
 
-**Tech stack:**
+**Tech Stack:**
 
-- **Ruby on Rails** powers the REST API and other web pages
-- **React.js** and Redux are used for the dynamic parts of the interface
-- **Node.js** powers the streaming API
+- **Ruby on Rails** chạy REST API và một vài trang web
+- **React.js** và Redux được sử dụng cho phần động (dynamic) của giao diện 
+- **Node.js** dùng để chạy API Streaming
 
-**Requirements:**
+**Yêu cầu:**
 
 - **PostgreSQL** 9.5+
 - **Redis** 4+
 - **Ruby** 2.5+
 - **Node.js** 12+
 
-The repository includes deployment configurations for **Docker and docker-compose**, but also a few specific platforms like **Heroku**, **Scalingo**, and **Nanobox**. The [**stand-alone** installation guide](https://docs.joinmastodon.org/admin/install/) is available in the documentation.
+Repository bao gồm cấu hình vận hành cho **Docker và docker-compose**, và vài nền tảng thường gặp như **Heroku**, **Scalingo**, và **Nanobox**. Hướng dẫn [cài đặt **cơ bản**](https://docs.joinmastodon.org/admin/install/) is available in the documentation.
 
-A **Vagrant** configuration is included for development purposes. To use it, complete following steps:
+Một cấu hình **Vagrant** đã được thêm vào cho mục đích phát triển. Hướng dẫn sử dụng:
 
-- Install Vagrant and Virtualbox
-- Run `vagrant up`
-- Run `vagrant ssh -c "cd /vagrant && foreman start"`
-- Open `http://mastodon.local` in your browser
+- Cài đặt Vagrant và Virtualbox
+- Chạy `vagrant up`
+- Chạy `vagrant ssh -c "cd /vagrant && foreman start"`
+- Mở `http://mastodon.local` trong trình duyệt của bạn
 
-## Contributing
+## Đóng góp
 
-Mastodon is **free, open-source software** licensed under **AGPLv3**.
+Mastodon là **phần mềm miễn phí, mã nguồn mở** có giấy phép **AGPLv3**.
 
-You can open issues for bugs you've found or features you think are missing. You can also submit pull requests to this repository, or submit translations using Crowdin. To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md). If your contributions are accepted into Mastodon, you can request to be paid through [our OpenCollective](https://opencollective.com/mastodon).
-
-**IRC channel**: #mastodon on irc.libera.chat
-
+Bản fork này là dự án của nhóm Mastodon, thực hiện cho môn học Phát triển phần mềm mã nguồn mở - SE301.M11, học kì II năm học 2021-2022, Đại học Công nghệ Thông tin - ĐH Quốc gia TP.HCM
 ## License
 
 Copyright (C) 2016-2021 Eugen Rochko & other Mastodon contributors (see [AUTHORS.md](AUTHORS.md))
