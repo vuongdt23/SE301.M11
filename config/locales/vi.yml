@@ -1355,6 +1355,8 @@ vi:
     contrast: Mastodon (Độ tương phản cao)
     default: Mastodon (Tối)
     mastodon-light: Mastodon (Sáng)
+    linernotes_dark: Linernotes (Tối)
+    mastodon-material: Material (Phẳng)
   time:
     formats:
       default: "%d.%m.%Y %H:%M"
