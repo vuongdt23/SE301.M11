@@ -1356,7 +1356,10 @@ vi:
     default: Mastodon (Tối)
     mastodon-light: Mastodon (Sáng)
     linernotes_dark: Linernotes (Tối)
-    mastodon-material: Material (Phẳng)
+
+    # Added theme
+    mastodon-material: Mastodon Material vi # add this line
+    google-plus: Google+ vi # Insert this one into the below line
   time:
     formats:
       default: "%d.%m.%Y %H:%M"

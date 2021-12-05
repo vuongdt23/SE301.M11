@@ -1430,7 +1430,11 @@ en:
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
     linernotes_dark: Linernotes (Tối)
-    mastodon-material: Material
+
+
+    # Added theme
+    mastodon-material: Mastodon Material en # add this line
+    google-plus: Google+ en # Insert this one into the below line
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

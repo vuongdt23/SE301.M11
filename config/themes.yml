@@ -2,4 +2,6 @@ default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
 linernotes_dark: styles/linernotes_dark.scss
-mastodon-material: styles/mastodon-material.scss
+# Added theme
+mastodon-material: styles/mastodon-material.scss # add this line
+google-plus: styles/gplus-theme-for-mastodon.scss # Insert this one into any lines
